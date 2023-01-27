@@ -20,9 +20,9 @@ toolkit:
     entry_file: step.sh
 
 inputs:
-  - pbxproj_path:
+  - project_path:
     opts:
-      title: "Xcode pbxproj path"
+      title: "Xcode project path"
       summary: "Path to the iOS project `.xcodeproj` file."
       description: |
         Path to the iOS project `.xcodeproj` file.
