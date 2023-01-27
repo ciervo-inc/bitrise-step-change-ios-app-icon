@@ -1,0 +1,36 @@
+title: |-
+  change-ios-app-icon
+summary: |
+  This step will change ios app icon name.
+description: |
+  Replaces Xcode's project `ASSETCATALOG_COMPILER_APPICON_NAME` setting by passing in a new value.
+website: https://github.com/ciervo-inc/bitrise-step-change-ios-app-icon
+source_code_url: https://github.com/ciervo-inc/bitrise-step-change-ios-app-icon
+support_url: https://github.com/ciervo-inc/bitrise-step-change-ios-app-icon/issues
+
+type_tags:
+  - utility
+
+is_requires_admin_user: false
+is_always_run: false
+is_skippable: false
+
+toolkit:
+  bash:
+    entry_file: step.sh
+
+inputs:
+  - pbxproj_path:
+    opts:
+      title: "Xcode pbxproj path"
+      summary: "Path to the iOS project `.xcodeproj` file."
+      description: |
+        Path to the iOS project `.xcodeproj` file.
+      is_required: true
+  - new_icon_name:
+    opts:
+      title: "New icon name"
+      summary: "The new icon to be set."
+      description: |
+        The new icon to be set.
+      is_required: true
